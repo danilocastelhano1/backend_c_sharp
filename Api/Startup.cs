@@ -27,7 +27,7 @@ namespace Api
         {
             //services.AddCors();            
             services.AddControllers();
-            services.AddDbContext<ApiContext>(options => options.UseMySql("server = 192.168.0.123; Port = 3306; User ID = root; password = !Dann346534; database = api_test"));
+            services.AddDbContext<ApiContext>(options => options.UseMySql("server = 192.168.0.123; Port = 3306; User ID = root; password = my_password; database = api_test"));
 
             Injector.RegisterServices(services);
         }
